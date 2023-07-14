@@ -1,6 +1,15 @@
 'use client';
 import Image from 'next/image'
 import LampelComp from './LampelComp'
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export default function Home() {
   return (
@@ -28,6 +37,19 @@ export default function Home() {
             
            <a className='flex content-center items-center justify-center flex-nowrap' href="/about" >About</a>
   <LampelComp textToSend="hello From Parent"></LampelComp>  
+  <Button>Click me shad cn</Button>
+  <Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
   </>
   )
 }
